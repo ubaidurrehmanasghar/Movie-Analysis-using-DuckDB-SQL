@@ -17,27 +17,27 @@ movie-db-duckdb/ <br>
 ├── requirements.txt :List of dependencies <br>
 
 ## Setup Instructions
-1. Install DuckDB:
+1. Install DuckDB:<br>
    ```pip install duckdb```
 
-2. Create and populate the database:
-``` duckdb movie_db.duckdb `
-.read scripts/create_tables.sql
+2. Create and populate the database:<br>
+``` duckdb movie_db.duckdb <br> `
+.read scripts/create_tables.sql <br>
 .read scripts/insert_data.sql ```
 
-3. Run Analytics Queries:
+3. Run Analytics Queries:<br>
 ```.read scripts/analytics.sql```
 
 ## Sample Queries
-**Top 3 Movies by Rating:**
-```SELECT title, rating FROM movies `
-JOIN ratings ON movies.id = ratings.movie_id 
+**Top 3 Movies by Rating:** <br>
+```SELECT title, rating FROM movies `<br>
+JOIN ratings ON movies.id = ratings.movie_id <br>
 ORDER BY rating DESC LIMIT 3;```
 
-**Movies by Genre:**
-```SELECT genres.name AS genre, COUNT(movies.id) AS movie_count`
-FROM genres
-LEFT JOIN movies ON genres.id = movies.genre_id
+**Movies by Genre:**<br>
+```SELECT genres.name AS genre, COUNT(movies.id) AS movie_count`<br>
+FROM genres<br>
+LEFT JOIN movies ON genres.id = movies.genre_id<br>
 GROUP BY genres.name;```
 
 ## License
