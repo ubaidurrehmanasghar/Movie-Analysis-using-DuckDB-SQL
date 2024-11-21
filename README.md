@@ -4,7 +4,6 @@ This project demonstrates how to use DuckDB with SQL for building a movie analyt
 
 ## Features
 - SQL-based database management using DuckDB.
-- Analytics queries for insights, such as top-rated movies and genre statistics.
 - Lightweight and efficient design, perfect for local analytics.
 
 ## Project Structure
@@ -13,7 +12,6 @@ movie-db-duckdb/ <br>
 ├── scripts/ :SQL scripts for creating tables and running queries <br>
 ├── movie_db.duckdb :DuckDB database file (generated) <br>
 ├── README.md :Project documentation <br>
-├── LICENSE :License information <br>
 ├── requirements.txt :List of dependencies <br>
 
 ## Setup Instructions
