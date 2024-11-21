@@ -39,6 +39,3 @@ movie-db-duckdb/ <br>
 ```COUNT(movies.id) AS movie_count```<br>
 ```FROM genres LEFT JOIN movies ON genres.id = movies.genre_id```<br>
 ```GROUP BY genres.name;```
-
-## License
-This project is licensed under the MIT License. See LICENSE for more details.
